@@ -362,5 +362,5 @@
         }
     ],
     "themes": [],
-    "windowingBehavior": "useAnyExisting"
+    "windowingBehavior": "useNew"
 }
