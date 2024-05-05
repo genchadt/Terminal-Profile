@@ -46,7 +46,7 @@
     {
         "defaults": 
         {
-            "colorScheme": "Gruvbox Dark",
+            "colorScheme": "One Half Dark",
             "experimental.retroTerminalEffect": false,
             "font": 
             {
