@@ -9,30 +9,18 @@
                 "action": "copy",
                 "singleLine": false
             },
-            "id": "User.copy.644BA8F2",
-            "keys": "ctrl+c"
-        },
-        {
-            "command": "unbound",
-            "keys": "ctrl+shift+t"
-        },
-        {
-            "command": "paste",
-            "id": "User.paste",
-            "keys": "ctrl+v"
-        },
-        {
-            "command": "find",
-            "id": "User.find",
-            "keys": "ctrl+shift+f"
+            "id": "User.copy.644BA8F2"
         },
         {
             "command": 
             {
                 "action": "newTab"
             },
-            "id": "User.newTab.5DEADB41",
-            "keys": "ctrl+t"
+            "id": "User.newTab.5DEADB41"
+        },
+        {
+            "command": "paste",
+            "id": "User.paste"
         },
         {
             "command": 
@@ -41,8 +29,11 @@
                 "split": "auto",
                 "splitMode": "duplicate"
             },
-            "id": "User.splitPane.A6751878",
-            "keys": "alt+shift+d"
+            "id": "User.splitPane.A6751878"
+        },
+        {
+            "command": "find",
+            "id": "User.find"
         }
     ],
     "centerOnLaunch": true,
@@ -51,6 +42,43 @@
     "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
     "initialPosition": "0,0",
     "initialRows": 38,
+    "snapToGridOnResize": true,
+    "initialCols": 120,
+    "keybindings": 
+    [
+        {
+            "id": null,
+            "keys": "ctrl+shift+t"
+        },
+        {
+            "id": "User.newTab.5DEADB41",
+            "keys": "ctrl+t"
+        },
+        {
+            "id": "User.copy.644BA8F2",
+            "keys": "ctrl+c"
+        },
+        {
+            "id": "Terminal.QuakeMode",
+            "keys": "alt+`"
+        },
+        {
+            "id": "User.find",
+            "keys": "ctrl+shift+f"
+        },
+        {
+            "id": "User.paste",
+            "keys": "ctrl+v"
+        },
+        {
+            "id": "User.splitPane.A6751878",
+            "keys": "alt+shift+d"
+        },
+        {
+            "id": null,
+            "keys": "win+sc(41)"
+        }
+    ],
     "newTabMenu": 
     [
         {
@@ -118,13 +146,30 @@
                 "hidden": false,
                 "name": "Git Bash",
                 "source": "Git"
+            },
+            {
+                "guid": "{58ad8b0c-3ef8-5f4d-bc6f-13e4c00f2530}",
+                "hidden": false,
+                "name": "Debian",
+                "source": "Windows.Terminal.Wsl"
+            },
+            {
+                "guid": "{af17bd62-e7f7-5dcc-885c-a4ac3f259d37}",
+                "hidden": false,
+                "name": "Developer Command Prompt for VS 2022",
+                "source": "Windows.Terminal.VisualStudio"
+            },
+            {
+                "guid": "{584814fb-8998-5ac5-ba73-cdcc6b853a4a}",
+                "hidden": false,
+                "name": "Developer PowerShell for VS 2022",
+                "source": "Windows.Terminal.VisualStudio"
             }
         ]
     },
     "schemes": 
     [
         {
-            "name": "Abyss",
             "background": "#040C1E",
             "black": "#040C1E",
             "blue": "#3A8EDD",
@@ -140,6 +185,7 @@
             "cyan": "#5FAFEF",
             "foreground": "#EEFFFF",
             "green": "#5FAFEF",
+            "name": "Abyss",
             "purple": "#C792EA",
             "red": "#FF5370",
             "selectionBackground": "#0F1A2F",
@@ -147,7 +193,6 @@
             "yellow": "#FFCB6B"
         },
         {
-            "name": "Amber CRT",
             "background": "#000000",
             "black": "#000000",
             "blue": "#FFA500",
@@ -163,6 +208,7 @@
             "cyan": "#FFA500",
             "foreground": "#FFA500",
             "green": "#FFA500",
+            "name": "Amber CRT",
             "purple": "#FFA500",
             "red": "#FFA500",
             "selectionBackground": "#555555",
@@ -170,7 +216,6 @@
             "yellow": "#FFA500"
         },
         {
-            "name": "App II",
             "background": "#000000",
             "black": "#000000",
             "blue": "#0000FF",
@@ -186,6 +231,7 @@
             "cyan": "#00FFFF",
             "foreground": "#AAAAAA",
             "green": "#00FF00",
+            "name": "App II",
             "purple": "#FF00FF",
             "red": "#FF0000",
             "selectionBackground": "#555555",
@@ -193,7 +239,6 @@
             "yellow": "#FFFF00"
         },
         {
-            "name": "Ayu",
             "background": "#0A0E14",
             "black": "#01060E",
             "blue": "#59C2FF",
@@ -209,6 +254,7 @@
             "cyan": "#95E6CB",
             "foreground": "#F8F9FA",
             "green": "#BAE67E",
+            "name": "Ayu",
             "purple": "#D4BFFF",
             "red": "#FF3333",
             "selectionBackground": "#1F2430",
@@ -216,7 +262,6 @@
             "yellow": "#FFA759"
         },
         {
-            "name": "Commodore 64",
             "background": "#000000",
             "black": "#000000",
             "blue": "#0000FF",
@@ -232,6 +277,7 @@
             "cyan": "#00FFFF",
             "foreground": "#AAAAAA",
             "green": "#00FF00",
+            "name": "Commodore 64",
             "purple": "#FF00FF",
             "red": "#FF0000",
             "selectionBackground": "#555555",
@@ -484,13 +530,13 @@
             "cyan": "#EBBCBA",
             "foreground": "#E0DEF4",
             "green": "#31748F",
-            "name": "Rosé Pine",
+            "name": "Ros\u00e9 Pine",
             "purple": "#C4A7E7",
             "red": "#EB6F92",
             "selectionBackground": "#26233A",
             "white": "#E0DEF4",
             "yellow": "#F6C177"
-        },        
+        },
         {
             "background": "#002B36",
             "black": "#073642",
